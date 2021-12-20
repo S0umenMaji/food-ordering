@@ -1,0 +1,60 @@
+.logo a {
+    font-size: 35px  !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    /* color: #fff; */
+}
+nav ul li a{
+text-transform: uppercase;
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+}
+
+.menu-icon{
+    width: 28px;
+    display: none;
+}
+@media only screen and (max-width:850px) { 
+.menu-icon{
+    display: block;
+    cursor: pointer;
+}
+    nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background: rgba(15, 15, 14, 0.945);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block  !important;
+        margin-right: 50px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+   }
